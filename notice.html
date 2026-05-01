@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공지사항 — cafelog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="subpage subpage--notice">
+  <header class="site-header site-header--sub" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="cafelog 홈">
+        <span class="brand-lockup">
+          <svg class="brand-mark" viewBox="0 0 40 40" role="img" aria-hidden="true" focusable="false">
+            <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.15" opacity="0.32"/>
+            <path fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" opacity="0.75" d="M14 12.5c.9 1.6-.8 2.8.4 4.2M20 11c.9 1.6-.8 2.8.4 4.2M26 12.5c.9 1.6-.8 2.8.4 4.2"/>
+            <path fill="currentColor" d="M12 26.25h11.75c.55 0 1-.45 1-1v-.5H12v1.5zm0-2.75v-5.5c0-2.35 1.9-4.25 4.25-4.25h3.5c2.35 0 4.25 1.9 4.25 4.25v5.5H12zm13.5-4.75h2c1.52 0 2.75 1.23 2.75 2.75S29.02 24.25 27.5 24.25H25.5v-5.5z"/>
+          </svg>
+          <span class="brand-wordmark">
+            <span class="brand-part brand-part--soft">cafe</span><span class="brand-part brand-part--strong">log</span>
+          </span>
+        </span>
+      </a>
+
+      <nav class="gnb" aria-label="주요 메뉴">
+        <ul class="gnb-list">
+          <li class="gnb-item has-mega">
+            <a href="index.html#intro" class="gnb-link is-active" data-mega="mega-intro">소개</a>
+            <div class="mega" id="mega-intro" role="region" aria-label="소개 하위 메뉴">
+              <div class="mega-inner">
+                <div class="mega-grid">
+                  <article class="mega-card">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=200&h=200&fit=crop" alt="" width="72" height="72" class="mega-thumb" loading="lazy">
+                    <div class="mega-body">
+                      <h3 class="mega-title">cafelog란</h3>
+                      <p class="mega-desc">취향 데이터를 바탕으로 오늘의 카페를 제안하는 감성 큐레이션 서비스입니다.</p>
+                      <div class="mega-links">
+                        <a href="#">브랜드 스토리</a>
+                        <a href="#">팀 소개</a>
+                        <a href="#">미디어</a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="mega-card">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=200&h=200&fit=crop" alt="" width="72" height="72" class="mega-thumb" loading="lazy">
+                    <div class="mega-body">
+                      <h3 class="mega-title">비전</h3>
+                      <p class="mega-desc">공간·음료·무드까지 한 번에 느껴지는 ‘감각적인 카페 경험’을 확장합니다.</p>
+                      <div class="mega-links">
+                        <a href="#">ESG</a>
+                        <a href="#">파트너십</a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="mega-card">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=200&h=200&fit=crop" alt="" width="72" height="72" class="mega-thumb" loading="lazy">
+                    <div class="mega-body">
+                      <h3 class="mega-title">뉴스룸</h3>
+                      <p class="mega-desc">업데이트와 인터뷰, 이벤트 소식을 모았습니다.</p>
+                      <div class="mega-links">
+                        <a href="notice.html" aria-current="page">공지</a>
+                        <a href="#">보도자료</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="gnb-item has-mega">
+            <a href="index.html#ai" class="gnb-link" data-mega="mega-ai">AI 추천</a>
+            <div class="mega" id="mega-ai" role="region" aria-label="AI 추천 하위 메뉴">
+              <div class="mega-inner">
+                <div class="mega-grid">
+                  <article class="mega-card">
+                    <img src="https://images.unsplash.com/photo-1511920172733-8b2cb672d048?w=200&h=200&fit=crop" alt="" width="72" height="72" class="mega-thumb" loading="lazy">
+                    <div class="mega-body">
+                      <h3 class="mega-title">취향 프로필</h3>
+                      <p class="mega-desc">산미·바디·무드 선호를 학습해 맞춤 리스트를 만듭니다.</p>
+                      <div class="mega-links">
+                        <a href="#">설문 가이드</a>
+                        <a href="#">데이터 안내</a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="mega-card">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=200&h=200&fit=crop" alt="" width="72" height="72" class="mega-thumb" loading="lazy">
+                    <div class="mega-body">
+                      <h3 class="mega-title">추천 엔진</h3>
+                      <p class="mega-desc">협업 필터링과 콘텐츠 신호를 결합한 하이브리드 모델입니다.</p>
+                      <div class="mega-links">
+                        <a href="#">기술 블로그</a>
+                        <a href="#">연구 노트</a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="mega-card">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=200&h=200&fit=crop" alt="" width="72" height="72" class="mega-thumb" loading="lazy">
+                    <div class="mega-body">
+                      <h3 class="mega-title">리뷰 품질</h3>
+                      <p class="mega-desc">노이즈를 줄이고 진짜 ‘머무름’에 가까운 피드백만 반영합니다.</p>
+                      <div class="mega-links">
+                        <a href="#">가이드라인</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="gnb-item has-mega">
+            <a href="index.html#explore" class="gnb-link" data-mega="mega-explore">탐색</a>
+            <div class="mega" id="mega-explore" role="region" aria-label="탐색 하위 메뉴">
+              <div class="mega-inner">
+                <div class="mega-grid">
+                  <article class="mega-card">
+                    <img src="https://images.unsplash.com/photo-1559925393-8fa0a46d5097?w=200&h=200&fit=crop" alt="" width="72" height="72" class="mega-thumb" loading="lazy">
+                    <div class="mega-body">
+                      <h3 class="mega-title">지역별</h3>
+                      <p class="mega-desc">동네 단위로 분위기 좋은 매장을 모아두었습니다.</p>
+                      <div class="mega-links">
+                        <a href="#">서울</a>
+                        <a href="#">경기</a>
+                        <a href="#">지방 주요 도시</a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="mega-card">
+                    <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=200&h=200&fit=crop" alt="" width="72" height="72" class="mega-thumb" loading="lazy">
+                    <div class="mega-body">
+                      <h3 class="mega-title">무드</h3>
+                      <p class="mega-desc">작업·데이트·혼자 쉼 등 상황에 맞는 공간을 고릅니다.</p>
+                      <div class="mega-links">
+                        <a href="#">집중</a>
+                        <a href="#">대화</a>
+                        <a href="#">힐링</a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="mega-card">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=200&h=200&fit=crop" alt="" width="72" height="72" class="mega-thumb" loading="lazy">
+                    <div class="mega-body">
+                      <h3 class="mega-title">메뉴 큐레이션</h3>
+                      <p class="mega-desc">시즌 원두와 시그니처 음료를 테마별로 소개합니다.</p>
+                      <div class="mega-links">
+                        <a href="#">시즌</a>
+                        <a href="#">디카페인</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="gnb-item has-mega">
+            <a href="index.html#mag" class="gnb-link" data-mega="mega-mag">매거진</a>
+            <div class="mega" id="mega-mag" role="region" aria-label="매거진 하위 메뉴">
+              <div class="mega-inner">
+                <div class="mega-grid">
+                  <article class="mega-card">
+                    <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=200&h=200&fit=crop" alt="" width="72" height="72" class="mega-thumb" loading="lazy">
+                    <div class="mega-body">
+                      <h3 class="mega-title">에디토리얼</h3>
+                      <p class="mega-desc">바리스타 인터뷰와 공간 스토리를 길게 읽습니다.</p>
+                      <div class="mega-links">
+                        <a href="#">이번 주 픽</a>
+                        <a href="#">아카이브</a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="mega-card">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=200&h=200&fit=crop" alt="" width="72" height="72" class="mega-thumb" loading="lazy">
+                    <div class="mega-body">
+                      <h3 class="mega-title">브리프</h3>
+                      <p class="mega-desc">짧은 카드 뉴스로 트렌드를 전합니다.</p>
+                      <div class="mega-links">
+                        <a href="#">커피 트렌드</a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="mega-card">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=200&h=200&fit=crop" alt="" width="72" height="72" class="mega-thumb" loading="lazy">
+                    <div class="mega-body">
+                      <h3 class="mega-title">영상</h3>
+                      <p class="mega-desc">로스팅·내추럴 와인 페어링 등 영감을 담았습니다.</p>
+                      <div class="mega-links">
+                        <a href="#">클립</a>
+                        <a href="#">다큐</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="gnb-item has-mega">
+            <a href="index.html#support" class="gnb-link" data-mega="mega-support">고객지원</a>
+            <div class="mega" id="mega-support" role="region" aria-label="고객지원 하위 메뉴">
+              <div class="mega-inner">
+                <div class="mega-grid">
+                  <article class="mega-card">
+                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=200&h=200&fit=crop" alt="" width="72" height="72" class="mega-thumb" loading="lazy">
+                    <div class="mega-body">
+                      <h3 class="mega-title">문의</h3>
+                      <p class="mega-desc">제휴·입점·서비스 관련 문의를 받습니다.</p>
+                      <div class="mega-links">
+                        <a href="#">1:1 문의</a>
+                        <a href="#">FAQ</a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="mega-card">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=200&h=200&fit=crop" alt="" width="72" height="72" class="mega-thumb" loading="lazy">
+                    <div class="mega-body">
+                      <h3 class="mega-title">입점 안내</h3>
+                      <p class="mega-desc">매장 정보 등록과 노출 정책을 안내합니다.</p>
+                      <div class="mega-links">
+                        <a href="#">가이드 PDF</a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="mega-card">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=200&h=200&fit=crop" alt="" width="72" height="72" class="mega-thumb" loading="lazy">
+                    <div class="mega-body">
+                      <h3 class="mega-title">계정</h3>
+                      <p class="mega-desc">알림·개인정보 설정을 관리합니다.</p>
+                      <div class="mega-links">
+                        <a href="#">로그인</a>
+                        <a href="#">알림 설정</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-util">
+        <button type="button" class="btn-pill" id="openLoginModal">취향 추천 받기</button>
+        <button type="button" class="icon-btn" aria-label="언어 선택">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </button>
+        <button type="button" class="icon-btn" aria-label="검색">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
+        <button type="button" class="icon-btn menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="메뉴 열기">
+          <svg class="icon-hamburger" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <ul class="mobile-nav-list">
+        <li><a href="index.html#intro">소개</a></li>
+        <li><a href="index.html#ai">AI 추천</a></li>
+        <li><a href="index.html#explore">탐색</a></li>
+        <li><a href="index.html#mag">매거진</a></li>
+        <li><a href="index.html#support">고객지원</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="notice-main" id="main">
+    <div class="notice-main-inner">
+      <header class="notice-page-head">
+        <p class="notice-page-kicker">Newsroom</p>
+        <h1 class="notice-page-title">공지사항</h1>
+        <p class="notice-page-desc">서비스 업데이트·점검·이벤트 소식을 한곳에서 안내합니다.</p>
+      </header>
+
+      <div class="notice-board-card">
+        <div class="notice-board-toolbar">
+          <p class="notice-board-count" aria-live="polite">총 <strong>128</strong>건</p>
+          <div class="notice-board-search" role="search">
+            <label class="visually-hidden" for="noticeSearch">검색</label>
+            <input type="search" id="noticeSearch" class="notice-board-search-input" placeholder="제목 검색" autocomplete="off" disabled>
+            <span class="notice-board-search-hint">검색 준비 중</span>
+          </div>
+        </div>
+
+        <div class="board-table-scroll" role="region" aria-label="공지 목록 테이블" tabindex="0">
+          <table class="board-table">
+            <caption class="visually-hidden">공지사항 게시판. 번호, 구분, 제목, 등록일, 조회 수.</caption>
+            <thead>
+              <tr>
+                <th scope="col" class="board-th board-th--no">번호</th>
+                <th scope="col" class="board-th board-th--type">구분</th>
+                <th scope="col" class="board-th board-th--subject">제목</th>
+                <th scope="col" class="board-th board-th--date">등록일</th>
+                <th scope="col" class="board-th board-th--hit">조회</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="board-row board-row--pinned">
+                <td class="board-td board-td--no"><span class="board-pin" aria-hidden="true">고정</span></td>
+                <td class="board-td board-td--type"><span class="board-badge board-badge--notice">공지</span></td>
+                <td class="board-td board-td--subject">개인정보 처리방침 개정 안내 (2026. 5. 1. 시행)</td>
+                <td class="board-td board-td--date">2026.04.18</td>
+                <td class="board-td board-td--hit">2,841</td>
+              </tr>
+              <tr class="board-row board-row--pinned">
+                <td class="board-td board-td--no"><span class="board-pin" aria-hidden="true">고정</span></td>
+                <td class="board-td board-td--type"><span class="board-badge board-badge--notice">공지</span></td>
+                <td class="board-td board-td--subject">AI 추천 서비스 베타 이용약관 변경 사전 안내</td>
+                <td class="board-td board-td--date">2026.04.02</td>
+                <td class="board-td board-td--hit">1,905</td>
+              </tr>
+              <tr class="board-row">
+                <td class="board-td board-td--no">28</td>
+                <td class="board-td board-td--type"><span class="board-badge board-badge--info">안내</span></td>
+                <td class="board-td board-td--subject">5월 6일(화) 새벽 시스템 점검에 따른 일시 중단 (02:00–05:00)</td>
+                <td class="board-td board-td--date">2026.04.28</td>
+                <td class="board-td board-td--hit">612</td>
+              </tr>
+              <tr class="board-row">
+                <td class="board-td board-td--no">27</td>
+                <td class="board-td board-td--type"><span class="board-badge board-badge--event">이벤트</span></td>
+                <td class="board-td board-td--subject">봄 시즌 원두 페어링 매거진 출간 기념 리뷰 이벤트</td>
+                <td class="board-td board-td--date">2026.04.22</td>
+                <td class="board-td board-td--hit">1,203</td>
+              </tr>
+              <tr class="board-row">
+                <td class="board-td board-td--no">26</td>
+                <td class="board-td board-td--type"><span class="board-badge board-badge--info">안내</span></td>
+                <td class="board-td board-td--subject">iOS / Android 앱 2.4.0 업데이트 배포 (다크모드 개선)</td>
+                <td class="board-td board-td--date">2026.04.15</td>
+                <td class="board-td board-td--hit">887</td>
+              </tr>
+              <tr class="board-row">
+                <td class="board-td board-td--no">25</td>
+                <td class="board-td board-td--type"><span class="board-badge board-badge--notice">공지</span></td>
+                <td class="board-td board-td--subject">입점 파트너 정산 리포트 양식 변경 (엑셀 v3)</td>
+                <td class="board-td board-td--date">2026.04.09</td>
+                <td class="board-td board-td--hit">534</td>
+              </tr>
+              <tr class="board-row">
+                <td class="board-td board-td--no">24</td>
+                <td class="board-td board-td--type"><span class="board-badge board-badge--info">안내</span></td>
+                <td class="board-td board-td--subject">지도 데이터 공급사 전환에 따른 일부 지역 좌표 보정</td>
+                <td class="board-td board-td--date">2026.03.30</td>
+                <td class="board-td board-td--hit">421</td>
+              </tr>
+              <tr class="board-row">
+                <td class="board-td board-td--no">23</td>
+                <td class="board-td board-td--type"><span class="board-badge board-badge--event">이벤트</span></td>
+                <td class="board-td board-td--subject">바리스타 인터뷰 시리즈 Vol.4 사전 알림 신청 오픈</td>
+                <td class="board-td board-td--date">2026.03.21</td>
+                <td class="board-td board-td--hit">2,016</td>
+              </tr>
+              <tr class="board-row">
+                <td class="board-td board-td--no">22</td>
+                <td class="board-td board-td--type"><span class="board-badge board-badge--info">안내</span></td>
+                <td class="board-td board-td--subject">리뷰 품질 정책 개편 — 부적합 신고 처리 기준 강화</td>
+                <td class="board-td board-td--date">2026.03.12</td>
+                <td class="board-td board-td--hit">768</td>
+              </tr>
+              <tr class="board-row">
+                <td class="board-td board-td--no">21</td>
+                <td class="board-td board-td--type"><span class="board-badge board-badge--notice">공지</span></td>
+                <td class="board-td board-td--subject">설 연휴 고객센터 운영 시간 안내</td>
+                <td class="board-td board-td--date">2026.02.05</td>
+                <td class="board-td board-td--hit">3,442</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <nav class="board-paging" aria-label="페이지">
+          <span class="board-paging__edge board-paging__edge--disabled" aria-disabled="true">이전</span>
+          <ol class="board-paging__list">
+            <li><span class="board-paging__num is-current" aria-current="page">1</span></li>
+            <li><a href="#" class="board-paging__num" aria-label="2페이지">2</a></li>
+            <li><a href="#" class="board-paging__num" aria-label="3페이지">3</a></li>
+            <li><span class="board-paging__ellipsis" aria-hidden="true">…</span></li>
+            <li><a href="#" class="board-paging__num" aria-label="13페이지">13</a></li>
+          </ol>
+          <a href="#" class="board-paging__edge">다음</a>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="page-footer" aria-label="사이트 푸터 · 고객지원">
+    <div class="footer-top">
+      <nav class="footer-links" aria-label="푸터 정책">
+        <a href="#">개인정보처리방침</a>
+        <a href="#">사업장 위치</a>
+        <a href="notice.html">공지사항</a>
+      </nav>
+      <div class="footer-family">
+        <label class="visually-hidden" for="familySite">패밀리 사이트</label>
+        <select id="familySite" class="family-select">
+          <option value="">FAMILY SITE</option>
+          <option value="#">그룹사 A</option>
+          <option value="#">그룹사 B</option>
+        </select>
+      </div>
+    </div>
+    <div class="footer-divider" role="presentation"></div>
+    <div class="footer-bottom">
+      <p class="footer-slogan">취향에 맞는 한 잔, <span class="footer-slogan-accent">Wellness in every sip</span></p>
+      <div class="footer-meta">
+        <div class="footer-badges" aria-hidden="true">
+          <span class="badge-pill">WA</span>
+          <span class="badge-pill">ISMS</span>
+        </div>
+        <div class="footer-social" aria-label="소셜 링크">
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zm5.25-4a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17.25 5.5z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1 31.7 31.7 0 0 0 .5-5.8 31.7 31.7 0 0 0-.5-5.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a>
+        </div>
+        <p class="footer-fine">
+          서울특별시 종로구 테헤란로 00길 00 &nbsp;|&nbsp; 대표이사 홍길동 &nbsp;|&nbsp; 사업자등록번호 000-00-00000<br>
+          고객센터 1588-0000 (평일 09:00–18:00) &nbsp;|&nbsp; 이메일 hello@cafelog.app
+        </p>
+        <p class="footer-copy">© cafelog. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="login-modal" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginModalTitle" hidden>
+    <div class="login-modal__backdrop" id="loginModalBackdrop" aria-hidden="true"></div>
+    <div class="login-modal__panel">
+      <button type="button" class="login-modal__close" id="loginModalClose" aria-label="닫기">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <h2 class="login-modal__title" id="loginModalTitle">로그인</h2>
+      <p class="login-modal__lead">추천 받으시려면 로그인해주세요.</p>
+      <form class="login-modal__form" action="#" method="post">
+        <label class="login-modal__field">
+          <span class="login-modal__label">이메일</span>
+          <input type="email" name="email" autocomplete="email" required placeholder="you@example.com">
+        </label>
+        <label class="login-modal__field">
+          <span class="login-modal__label">비밀번호</span>
+          <input type="password" name="password" autocomplete="current-password" required placeholder="••••••••">
+        </label>
+        <button type="submit" class="login-modal__submit">로그인</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
